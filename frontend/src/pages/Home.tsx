@@ -5,7 +5,7 @@ import api from '../services/api';
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 import { Calendar } from '../components/Calendar';
-import { Search, Plus, Calendar as CalendarIcon, MapPin, Clock } from 'lucide-react';
+import { Search, Plus, Calendar as CalendarIcon, Clock } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 
 export const Home = () => {
