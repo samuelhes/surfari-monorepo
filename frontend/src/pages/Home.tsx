@@ -57,6 +57,15 @@ export const Home = () => {
         }
     };
 
+    const fetchMyTrips = async () => {
+        try {
+            const response = await api.get('/users/me/trips');
+            setMyTrips(response.data);
+        } catch (error) {
+            console.error('Failed to fetch my trips', error);
+        }
+    };
+
     const handleSearch = (e: React.FormEvent) => {
         e.preventDefault();
         fetchRides();
