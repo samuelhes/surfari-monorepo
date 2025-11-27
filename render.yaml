@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: surfari-app
+    env: docker
+    plan: free
+    region: oregon
+    buildCommand: docker build -t surfari .
+    startCommand: docker run -p 3000:3000 surfari
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        generateValue: true
+    disk:
+      name: sqlite-data
+      mountPath: /app/data
+      sizeGB: 1
