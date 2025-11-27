@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../state/authStore';
 import api from '../services/api';
 import { Button } from '../components/Button';
-import { Input } from '../components/Input';
 import { format } from 'date-fns';
 import { Calendar, Clock, User, Car } from 'lucide-react';
 
