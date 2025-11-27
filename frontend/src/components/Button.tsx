@@ -30,4 +30,3 @@ export const Button = ({ className, variant = 'primary', size = 'md', fullWidth,
         />
     );
 };
-```
