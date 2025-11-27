@@ -17,11 +17,11 @@ import userRoutes from './routes/userRoutes';
 app.use(cors());
 app.use(express.json());
 
-app.use('/auth', authRoutes);
-app.use('/rides', rideRoutes);
-app.use('/rides/:rideId/requests', requestRoutes);
-app.use('/payments', paymentRoutes);
-app.use('/users', userRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/rides', rideRoutes);
+app.use('/api/rides/:rideId/requests', requestRoutes);
+app.use('/api/payments', paymentRoutes);
+app.use('/api/users', userRoutes);
 
 // Serve static files from the 'public' directory (Frontend build)
 // In Docker, we copy frontend/dist to /app/public
