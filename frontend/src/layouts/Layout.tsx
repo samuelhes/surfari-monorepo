@@ -1,5 +1,4 @@
-import React from 'react';
-import { Outlet, Link, useNavigate } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { useAuthStore } from '../state/authStore';
 import { LogOut, Car, User as UserIcon } from 'lucide-react';
 

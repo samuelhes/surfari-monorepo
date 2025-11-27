@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../state/authStore';
 import api from '../services/api';
 import { Button } from '../components/Button';
+import { Input } from '../components/Input';
 import { format } from 'date-fns';
-import { MapPin, Calendar, Clock, User, Car, CheckCircle, XCircle } from 'lucide-react';
+import { Calendar, Clock, User, Car } from 'lucide-react';
 
 export const RideDetails = () => {
     const { id } = useParams();
